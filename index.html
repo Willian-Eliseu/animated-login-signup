@@ -11,9 +11,9 @@
 </head>
 <body>
     <main>
-        <div class="container" id="login">
+        <div class="container bottomToTop" id="login">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 align-self-center">
                     <form id="loginForm" class="row g-3">
                         <div class="col-12">
                             <div class="form-group">
@@ -30,6 +30,57 @@
                         <div class="col-12">
                             <div class="form-group d-grid">
                                 <button type="submit" class="btn btn-primary fs-5" id="loginBtn">Login</button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <p class="text-center fs-5">
+                                    Don't have an account? <a href="javascript:void(0)" id="signupLink" class="text-decoration-none text-primary fs-5">Signup now</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block align-self-center p-3">
+                    <img src="https://picsum.photos/500/300" alt="Random image" class="w-100 rounded-3">
+                </div>
+            </div>
+        </div>
+        <div class="container d-none bottomToTop" id="signup">
+            <div class="row">
+                <div class="col-lg-6 d-none d-lg-block align-self-center p-3">
+                    <img src="https://picsum.photos/500/300" alt="Random image" class="w-100 rounded-3">
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <form id="signupForm" class="row g-3">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="name" class="form-label d-none bottomToTop" id="nameLabel">Please enter your name:</label>
+                                <input type="text" name="name" id="name" class="bginput form-control fs-5 border-0 border-bottom border-2" placeholder="Please enter your name" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="signupEmail" class="form-label d-none bottomToTop" id="signupEmailLabel">Please enter your email:</label>
+                                <input type="email" name="signupEmail" id="signupEmail" class="bginput form-control fs-5 border-0 border-bottom border-2" placeholder="Please enter your email" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="signupPassword" class="form-label d-none bottomToTop" id="signupPasswordLabel">Please enter your password:</label>
+                                <input type="password" name="signupPassword" id="signupPassword" class="bginput form-control fs-5 border-0 border-bottom border-2" placeholder="Please enter your password" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group d-grid">
+                                <button type="submit" class="btn btn-primary fs-5" id="signupBtn">Signup</button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <p class="text-center fs-5">
+                                    Already have an account? <a href="javascript:void(0)" id="loginLink" class="text-decoration-none text-primary fs-5">Login now</a>.
+                                </p>
                             </div>
                         </div>
                     </form>
